@@ -1,0 +1,41 @@
+<picture class='w-[320px] h-[550px] max-lg:mb-10'>
+  <img
+    class='rounded-2xl shadow-lg shadow-neutral-600 w-full h-full'
+    src='/public/image-libro.webp'
+    alt='foto de la portada del libro'
+  />
+</picture>
+
+<style>
+  picture {
+    aspect-ratio: 19/6;
+    transform: perspective(1000px);
+  }
+</style>
+
+<script>
+  const $picture = document.querySelector('picture')
+  const $image = document.querySelector('img')
+
+  $picture?.addEventListener('mousemove', (e) => {
+    const box = $picture.getBoundingClientRect()
+    const x = e.clientX - box.left
+    const y = e.clientY - box.top
+    const centerX = box.width / 2
+    const centerY = box.height / 2
+    const rotateX = (y - centerY) / 10
+    const rotateY = (centerX - x) / 10
+
+    if ($picture && $image) {
+      $image.style.transition = `none`
+      $image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+    }
+  })
+
+  $picture?.addEventListener('mouseleave', () => {
+    if ($picture && $image) {
+      $image.style.transition = `all 500ms ease-in-out`
+      $image.style.transform = `rotateX(${0}deg) rotateY(${0}deg)`
+    }
+  })
+</script>
