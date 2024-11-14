@@ -1,0 +1,63 @@
+<section
+  class='w-[40%] section-scroll max-sm:w-[90%] flex flex-col gap-y-4 mx-auto mb-8 items-center'
+>
+  <h3 class='text-3xl font-semibold text-neutral-800'>Tabla de contenido</h3>
+  <div
+    class='w-full rounded-xl bg-slate-200/40 px-5 py-5 flex flex-col gap-y-2'
+  >
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo I</p>
+      <p class='text-lg text-neutral-800'>mié,jul.17,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo II</p>
+      <p class='text-lg text-neutral-800'>mié,jul.24,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo III</p>
+      <p class='text-lg text-neutral-800'>jue,ago.1,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo IV</p>
+      <p class='text-lg text-neutral-800'>mié,ago.14,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo V</p>
+      <p class='text-lg text-neutral-800'>dom,ago.25,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo VI</p>
+      <p class='text-lg text-neutral-800'>sab,ago.31,2019</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo VII</p>
+      <p class='text-lg text-neutral-800'>mar,mar.3,2020</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo VIII</p>
+      <p class='text-lg text-neutral-800'>vie,jul.19,2024</p>
+    </div>
+    <div class='py-5 px-2 flex flex-row justify-between'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo IX</p>
+      <p class='text-lg text-neutral-800'>jue,ago.1,2024</p>
+    </div>
+    <div class='py-5 px-2 flex flex-col'>
+      <p class='text-xl font-medium text-neutral-800'>Capitulo X</p>
+      <p class='text-lg text-neutral-800/70'>Muy Pronto!!</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-scroll {
+    opacity: 0;
+    animation-name: scroll-opacity;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll(root block);
+  }
+  @keyframes scroll-opacity {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
