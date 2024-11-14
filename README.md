@@ -6,12 +6,4 @@ Descripción: Anabelle tiene sueños planteados, metas que cumplir y un deseo mu
 
 ![Portada del libro](https://img.wattpad.com/cover/182021845-512-k392023.jpg)
 
-![Captura de pantalla de la pagina](./public/capture_markdown.png)
-
-## Tecnologias
-
-- Astro
-- HTML
-- CSS
-- Javascript
-- Tailwind
+![Captura de pantalla de la pagina](./public/screenshot.jpg)
