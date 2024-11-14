@@ -1,13 +1,37 @@
-<h1 class='text-neutral-800 text-4xl font-bold max-lg:w-[100%]'>
-  No tan lejos de <span class='text-[#b65402]'>mi.</span>
-</h1>
-<h4 class='font-semibold text-neutral-800 text-xl mt-3'>
-  Author: <span class='text-[#b65402] font-semibold'>Judiber Alcalá</span>
-</h4>
-<p class='text-neutral-600 w-[90%] max-lg:w-[100%] text-lg mt-4 font-normal'>
-  <span class='font-medium text-neutral-700'>Descripción:</span>
-  Anabelle tiene sueños planteados, metas que cumplir y un deseo muy grande se superarse
-  por si misma, todo para demostrarle al mundo que no necesita del dinero y la fama
-  familiar que la persigue. Pero el amor llega de improvisto, cambiándole su vida
-  por completo.
-</p>
+<div class='animation-slide-up'>
+  <h1 class='text-neutral-800 text-5xl font-bold max-lg:w-[100%]'>
+    No tan lejos de <span class='text-primary'>mi.</span>
+  </h1>
+  <h4 class='font-semibold text-neutral-800 text-xl mt-3'>
+    Author: <span class='text-primary] font-medium'>Judiber Alcalá</span>
+  </h4>
+  <p class='text-neutral-700 w-[90%] max-lg:w-[100%] text-xl mt-4 font-normal'>
+    <span class='font-semibold text-neutral-800'>Descripción:</span>
+    Anabelle tiene sueños planteados, metas que cumplir y un deseo muy grande se
+    superarse por si misma, todo para demostrarle al mundo que no necesita del dinero
+    y la fama familiar que la persigue. Pero el amor llega de improvisto, cambiándole
+    su vida por completo.
+  </p>
+</div>
+
+<style>
+  .animation-slide-up {
+    opacity: 0;
+    animation-name: slide-up;
+    animation-iteration-count: 1;
+    animation-duration: 600ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
