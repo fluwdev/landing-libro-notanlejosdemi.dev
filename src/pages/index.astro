@@ -8,6 +8,8 @@ import SocialPink from '../components/SocialPink.astro'
 import ListBagde from '../components/ListBagde.astro'
 import InfoBook from '../components/InfoBook.astro'
 import Image from '../components/Image.astro'
+import Footer from '../components/Footer.astro'
+import TableContent from '../components/TableContent.astro'
 ---
 
 <Layout title='Libro No tan lejos de Mi. Autora: Judiber Alcala'>
@@ -18,7 +20,7 @@ import Image from '../components/Image.astro'
     <div class='w-[70%] max-lg:w-[100%] p-12 flex flex-col'>
       <InfoBook />
       <ListBagde />
-      <Button>Ver el Libro</Button>
+      <Button>Descrube el libro!</Button>
       <div class='flex flex-row gap-x-5 mt-10'>
         <SocialPink
           href='https://www.instagram.com/judiberalcala'
@@ -36,4 +38,6 @@ import Image from '../components/Image.astro'
     </div>
     <Image />
   </main>
+  <TableContent />
+  <Footer />
 </Layout>
